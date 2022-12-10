@@ -1,0 +1,12 @@
+.vh-50{
+    min-height: 50vh!important;
+}
+
+.vh-75{
+    min-height: 75vh!important;
+}
+
+footer .svg-icon {
+	height: 15px !important;
+	width: 15px !important;
+}

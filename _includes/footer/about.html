@@ -1,0 +1,22 @@
+<a 
+	class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" 
+	href="{% link index.html %}" 
+	aria-label="{{ site.title | escape }}">
+	<img class="m-1"
+		src="{{ 'logo.svg' | relative_url }}"
+		width="32px">
+	<span class="fs-5">{{ site.title | escape }}</span>
+</a>
+<ul class="list-unstyled small text-muted">
+	<li class="mb-2">{{- site.description | escape -}}</li>
+	<li class="mb-2">
+		{%- if site.author -%}
+			{{ site.author | escape }}
+		{%- else -%}
+			{{ site.title | escape }}
+		{%- endif -%}
+	</li>
+	{%- if site.email -%}
+	<li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+	{%- endif -%}
+</ul>
